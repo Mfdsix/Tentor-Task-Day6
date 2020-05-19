@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fake Person Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- google font - Ubuntu -->
+	<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;700&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css">
+</head>
+<body>
+	<section>
+
+		<h1>We will pick our talented member for you</h1>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Specification</th>
+					<th>Data</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Name</td>
+					<td id="td-name">...</td>
+				</tr>
+				<tr>
+					<td>Age</td>
+					<td id="td-age">...</td>
+				</tr>
+				<tr>
+					<td>Work</td>
+					<td id="td-work">...</td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td id="td-city">...</td>
+				</tr>
+				<tr>
+					<td>10 years later</td>
+					<td id="td-ten-years">...</td>
+				</tr>
+				<tr>
+					<td>1/4 of age</td>
+					<td id="td-quarter">...</td>
+				</tr>
+				<tr>
+					<td>4 times of age</td>
+					<td id="td-four-times">...</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<div class="button-wrap">
+			<button class="btn btn-success" id="btn-hire"><i class="fas fa-check-circle"></i> Nice,i will hire this</button>
+			<button class="btn btn-danger" id="btn-repick"><i class="fas fa-sync-alt"></i> Pick other person</button>
+		</div>
+	</section>
+
+	<script src="js/person.js"></script>
+	<script src="js/app.js"></script>
+
+	<script type="text/javascript">
+		var btnHire = document.getElementById("btn-hire");
+		var btnRepick = document.getElementById("btn-repick");
+
+		window.onload = function(){
+			getPerson();
+		}
+
+		btnHire.onclick = function(e){
+			alert("Thank you for trust us");
+		}
+
+		btnRepick.onclick = function(e){
+			getPerson();
+		}
+
+	</script>
+
+</body>
+</html>

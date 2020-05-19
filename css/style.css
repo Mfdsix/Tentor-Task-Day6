@@ -101,3 +101,17 @@ td:nth-child(2){
 	background-color: var(--color-contrast);
 	color: var(--color-secondary);
 }
+
+@media screen and (max-width: 600px){
+	h1{
+		font-size: 18px;
+	}
+	table{
+		width: 90%;
+		font-size: 12px;
+	}
+	.btn{
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}

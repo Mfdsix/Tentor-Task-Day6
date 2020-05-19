@@ -1,7 +1,7 @@
 function getPerson(){
 	var random = generateRandom();
 	var person = people[random];
-	var load_html = "<i class='fas fa-circle-notch fa-spin'></i> Mendapatkan Data";
+	var load_html = "<i class='fas fa-circle-notch fa-spin'></i> Getting Data";
 
 
 	setValue("name", load_html);
